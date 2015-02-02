@@ -44,8 +44,11 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------WRAPPER--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .wrapper {
-    width: 1030px;
     min-height: 100%;
+}
+.content,
+.footer {
+    width: 1030px;
     margin: 0 auto;
 }
 .wrapper:after {
@@ -57,7 +60,39 @@ a:hover                        { text-decoration:none; }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
-
+.wrap-header {
+    padding: 7px 0;
+    background: #0D3C50;
+    text-align: center;
+}
+    .header {
+        display: inline-table;
+    }
+        .main-logo {
+            display: table-cell;
+        }
+        .main-nav {
+            display: table-cell;
+            padding-left: 65px;
+            vertical-align: middle;
+        }
+            .main-nav li {
+                display: inline-block;
+                margin-left: 26px;
+            }
+            .main-nav li:first-child {
+                margin-left: 0;
+            }
+                .main-nav a {
+                    font-size: 14px;
+                    color: #fff;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .main-nav .active,
+                .main-nav a:hover {
+                    color: #c7c7c7;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
