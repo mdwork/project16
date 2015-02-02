@@ -48,8 +48,12 @@ a:hover                        { text-decoration:none; }
 }
 .content,
 .footer {
+    overflow: hidden;
     width: 1030px;
     margin: 0 auto;
+}
+.content {
+    margin-bottom: 40px;
 }
 .wrapper:after {
     content: '';
@@ -104,18 +108,34 @@ a:hover                        { text-decoration:none; }
     width: 700px;
 }
     .main-content h1 {
+        margin-bottom: 20px;
         color: #353535;
         font-size: 36px;
         font-weight: 400;
         line-height: 40px;
     }
+    .main-picture-inner-page {
+        margin-bottom: 20px;
+    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .sidebar {
-    width: 305px;
+    width: 265px;
+    margin-top: 5px;
+    padding: 20px;
     background: #F1F5F9;
 }
+    .sidebar li {
+        margin-bottom: 15px;
+    }
+        .sidebar a {
+            text-decoration: none;
+        }
+            .sidebar .active a,
+            .sidebar a:hover {
+                color: #353535;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
