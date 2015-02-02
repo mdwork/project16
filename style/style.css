@@ -70,6 +70,9 @@ a:hover                        { text-decoration:none; }
     background: #0D3C50;
     text-align: center;
 }
+.home .wrap-header {
+    background: rgba(13,60,80, 0.6);
+}
     .header {
         display: inline-table;
     }
@@ -156,10 +159,16 @@ a:hover                        { text-decoration:none; }
     padding: 53px 0;
     background: #0D3C50;
 }
+.home .wrap-footer {
+    background: #fff;
+}
     .footer {
         text-align: center;
         font-size: 13px;
         color: #fff;
+    }
+    .home .footer {
+        color: #353535;
     }
         .nav-footer {
             margin-bottom: 20px;
@@ -184,6 +193,9 @@ a:hover                        { text-decoration:none; }
                     font-size: 13px;
                     text-decoration: none;
                     color: #fff;
+                }
+                .home .nav-footer a {
+                    color: #353535;
                 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------OTHER----------------------------------------*/
