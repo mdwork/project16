@@ -180,6 +180,41 @@ a:hover                        { text-decoration:none; }
         margin-left: 0.3%;
         cursor: pointer;
     }
+        .list-service .overview {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .list-service li:hover .overview {
+            display: block;
+        }
+        .service-1 .overview {
+            background: #5E182F;
+            opacity: 0.5;
+        }
+        .service-2 .overview {
+            background: #0D3C50;
+            opacity: 0.7;
+        }
+        .service-3 .overview {
+            background: #16310F;
+            opacity: 0.5;
+        }
+        .service-4 .overview {
+            background: #000;
+            opacity: 0.5;
+        }
+        .service-5 .overview {
+            background: #115A8F;
+            opacity: 0.5;
+        }
+        .service-6 .overview {
+            background: #C08D1E;
+            opacity: 0.5;
+        }
     .list-service li:first-child {
         margin-left: 0;
     }
