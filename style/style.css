@@ -86,10 +86,14 @@ a:hover                        { text-decoration:none; }
                     text-decoration: none;
                     text-transform: uppercase;
                 }
-                .main-nav .active > a,
-                .nav-footer .active a,
-                .main-nav .active span,
-                .nav-footer .active span,
+                .main-nav .current-menu-item > a,
+                .nav-footer .current-menu-item a,
+                .main-nav .current-menu-item span,
+                .nav-footer .current-menu-item span,
+                .main-nav .current-menu-parent > a,
+                .nav-footer .current-menu-parent a,
+                .main-nav .current-menu-parent span,
+                .nav-footer .current-menu-parent span,
                 .main-nav > ul > li > a:hover,
                 .nav-footer a:hover,
                 .sub-menu a:hover {
@@ -110,7 +114,7 @@ a:hover                        { text-decoration:none; }
                     -o-transition: all .3s;
                     transition: all .3s;
                 }
-                .sub-menu-item:hover .sub-menu {
+                .menu-item-has-children:hover .sub-menu {
                     opacity: 1;
                     visibility: visible;
                 }
@@ -317,6 +321,10 @@ a:hover                        { text-decoration:none; }
     float: right;
     width: 700px;
 }
+.error404 .main-content {
+    float: none;
+    width: auto;
+}
     .main-content h1 {
         margin-bottom: 20px;
         color: #353535;
@@ -402,7 +410,7 @@ a:hover                        { text-decoration:none; }
         .tbl-partners a:hover {
             text-decoration: none;
         }
-    .page-template-page-contacts h2 {
+    .page-id-35 h2 {
         margin-bottom: 20px;
         font-size: 18px;
         text-align: center;
@@ -478,7 +486,7 @@ a:hover                        { text-decoration:none; }
                     }
                     .page-numbers a:hover,
                     .page-numbers span {
-                        color: #00AEEC;
+                        color: #353535;
                     }
                     .page-numbers span {
                         cursor: default;
@@ -501,7 +509,7 @@ a:hover                        { text-decoration:none; }
         .sidebar a {
             text-decoration: none;
         }
-            .sidebar .active a,
+            .sidebar .current-menu-item a,
             .sidebar a:hover {
                 color: #353535;
             }
@@ -566,4 +574,16 @@ a {
 }
 .bold {
     font-weight: bold;
+}
+.wrap-404 {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    color: #0D3C50;
+}
+.error-404 {
+    display: block;
+    font-size: 188px;
+    line-height: 150px;
 }
