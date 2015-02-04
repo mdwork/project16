@@ -144,6 +144,29 @@ a:hover                        { text-decoration:none; }
                             font-size: 15px;
                             text-transform: lowercase;
                         }
+        .toggle-language {
+            position: absolute;
+            top: 20px;
+            right: 60px;
+            color: #fff;
+        }
+            .toggle-language button {
+                padding: 0;
+                background: none;
+                border: none;
+                color: #fff;
+                font-size: 14px;
+
+                -webkit-transition: all .3s;
+                -moz-transition: all .3s;
+                -ms-transition: all .3s;
+                -o-transition: all .3s;
+                transition: all .3s;
+            }
+            .toggle-language .active,
+            .toggle-language button:hover {
+                color: #c7c7c7;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
