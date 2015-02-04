@@ -402,6 +402,53 @@ a:hover                        { text-decoration:none; }
         font-size: 18px;
         text-align: center;
     }
+    .contact-box {
+        overflow: hidden;
+    }
+        .contact-box li {
+            float: left;
+            margin-left: 29px;
+            padding: 0;
+            list-style-type: none;
+        }
+        .contact-box li:first-child {
+            margin-left: 0;
+        }
+        .contact-box .address {
+            width: 90px;
+        }
+        .contact-box .index {
+            width: 240px;
+        }
+        .contact-box .tell {
+            width: 173px;
+        }
+            .contact-box span {
+                display: block;
+                font-size: 14px;
+            }
+            .contact-box .name {
+                margin-bottom: 10px;
+                padding: 0 0 1px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                background: no-repeat left center;
+            }
+            .address .name {
+                background-image: url("../images/content/contact_icon_address.png");
+            }
+            .index .name {
+                background-image: url("../images/content/contact_icon_index.png");
+            }
+            .tell .name {
+                background-image: url("../images/content/contact_icon_tell.png");
+            }
+            .mail .name {
+                background-image: url("../images/content/contact_icon_mail.png");
+            }
+            .mail a {
+                color: #2e6fba;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
