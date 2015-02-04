@@ -98,7 +98,8 @@ a:hover                        { text-decoration:none; }
             .main-nav li:first-child {
                 margin-left: 0;
             }
-                .main-nav a {
+                .main-nav a,
+                .main-nav span {
                     font-size: 14px;
                     color: #fff;
                     text-decoration: none;
@@ -106,6 +107,8 @@ a:hover                        { text-decoration:none; }
                 }
                 .main-nav .active a,
                 .nav-footer .active a,
+                .main-nav .active span,
+                .nav-footer .active span,
                 .main-nav a:hover,
                 .nav-footer a:hover {
                     color: #c7c7c7;
