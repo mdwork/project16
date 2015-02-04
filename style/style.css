@@ -105,12 +105,13 @@ a:hover                        { text-decoration:none; }
                     text-decoration: none;
                     text-transform: uppercase;
                 }
-                .main-nav .active a,
+                .main-nav > .active > a,
                 .nav-footer .active a,
                 .main-nav .active span,
                 .nav-footer .active span,
-                .main-nav a:hover,
-                .nav-footer a:hover {
+                .main-nav > li > a:hover,
+                .nav-footer a:hover,
+                .sub-menu a:hover {
                     color: #c7c7c7;
                 }
                 .main-nav .sub-menu {
