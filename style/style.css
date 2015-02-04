@@ -335,6 +335,22 @@ a:hover                        { text-decoration:none; }
             padding-left: 18px;
             list-style-type: disc;
         }
+    .list-news {
+
+    }
+        .list-news li {
+            margin: 0 0 15px;
+            padding: 0 0 35px;
+            border-bottom: 1px solid #D8E8F4;
+            list-style-type: none;
+        }
+        .list-news li:last-child {
+            border: none;
+        }
+            .list-news p {
+                margin: 0;
+                font-size: 14px;
+            }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
