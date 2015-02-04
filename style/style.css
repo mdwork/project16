@@ -461,6 +461,31 @@ a:hover                        { text-decoration:none; }
                 -moz-border-radius: 3px;
                 border-radius: 3px;
             }
+
+        .wrap-pagination {
+            text-align: center;
+        }
+            .pagination {
+                overflow: hidden;
+                display: inline-block;
+            }
+                .page-numbers li {
+                    display: inline-block;
+                    margin: 0 2px;
+                }
+                    .page-numbers a {
+                        text-decoration: none;
+                    }
+                    .page-numbers a:hover,
+                    .page-numbers span {
+                        color: #00AEEC;
+                    }
+                    .page-numbers span {
+                        cursor: default;
+                    }
+                    .page-numbers .current {
+                        font-weight: bold;
+                    }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
