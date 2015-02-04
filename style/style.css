@@ -144,6 +144,7 @@ a:hover                        { text-decoration:none; }
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 .big-block-kind-activity {
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 100%;
@@ -161,7 +162,7 @@ a:hover                        { text-decoration:none; }
     }
     .big-block-kind-activity .name-service {
         position: absolute;
-        bottom: 90px;
+        bottom: 95px;
         width: 100%;
         font-size: 36px;
         text-align: center;
@@ -195,7 +196,7 @@ a:hover                        { text-decoration:none; }
     }
     .big-block-kind-activity .btn-white {
         position: absolute;
-        bottom: 30px;
+        bottom: 35px;
         left: 50%;
         margin-left: -78px;
     }
