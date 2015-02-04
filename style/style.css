@@ -91,6 +91,7 @@ a:hover                        { text-decoration:none; }
             vertical-align: middle;
         }
             .main-nav li {
+                position: relative;
                 display: inline-block;
                 margin-left: 26px;
             }
@@ -109,6 +110,36 @@ a:hover                        { text-decoration:none; }
                 .nav-footer a:hover {
                     color: #c7c7c7;
                 }
+                .main-nav .sub-menu {
+                    opacity: 0;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 15px;
+                    left: -10px;
+                    padding-top: 24px;
+                    text-align: left;
+
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -ms-transition: all .3s;
+                    -o-transition: all .3s;
+                    transition: all .3s;
+                }
+                .sub-menu-item:hover .sub-menu {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                    .sub-menu li {
+                        float: none;
+                        width: 295px;
+                        padding: 10px;
+                        margin-left: 0;
+                        background: rgba(13,60,80, 0.6);
+                    }
+                        .sub-menu a {
+                            font-size: 15px;
+                            text-transform: lowercase;
+                        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
