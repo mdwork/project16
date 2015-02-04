@@ -357,7 +357,8 @@ a:hover                        { text-decoration:none; }
         margin-bottom: 20px;
         font-size: 17.5px;
     }
-    .tbl-products {
+    .tbl-products,
+    .tbl-partners {
         width: 100%;
         margin-bottom: 50px;
     }
@@ -376,6 +377,26 @@ a:hover                        { text-decoration:none; }
         }
         .tbl-products tbody td:nth-child(2n) {
             padding-left: 140px;
+        }
+        .tbl-partners td {
+            width: 50%;
+            padding: 10px 0;
+        }
+        .tbl-partners td:nth-child(2n +1) {
+            width: 60%;
+        }
+        .tbl-partners td:nth-child(2n) {
+            width: 40%;
+        }
+        .tbl-partners td,
+        .tbl-partners a {
+            font-size: 18px;
+        }
+        .tbl-partners a {
+            color: #0fa2f7;
+        }
+        .tbl-partners a:hover {
+            text-decoration: none;
         }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
