@@ -351,6 +351,32 @@ a:hover                        { text-decoration:none; }
                 margin: 0;
                 font-size: 14px;
             }
+    .description-model,
+    .name-model {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 17.5px;
+    }
+    .tbl-products {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+        .tbl-products thead th {
+            padding: 10px;
+            font-size: 24px;
+            font-weight: 400;
+            border: 1px solid #E3E3E3;
+            background: #F1F5F9;
+        }
+        .tbl-products td {
+            width: 50%;
+            padding: 8px;
+            font-size: 18px;
+            border: 1px solid #E3E3E3;
+        }
+        .tbl-products tbody td:nth-child(2n) {
+            padding-left: 140px;
+        }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
