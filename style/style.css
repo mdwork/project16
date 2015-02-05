@@ -124,6 +124,9 @@ a:hover                        { text-decoration:none; }
                         width: 295px;
                         padding: 10px;
                         margin-left: 0;
+                        background: rgb(13,60,80);
+                    }
+                    .home .sub-menu li {
                         background: rgba(13,60,80, 0.6);
                     }
                         .sub-menu a {
