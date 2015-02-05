@@ -3,19 +3,35 @@ $(document).ready(function(){
     var itemServiceBlock = $('.list-service li');
 
     itemServiceBlock.on('click', function(){
+        var bigBlockFoto = $('.big-block-kind-activity');
+
         itemServiceBlock.each(function(){
             $(this).removeClass('active');
         });
+
         $(this).addClass('active');
-        $('.big-block-kind-activity')
+
+        var getBigFoto = bigBlockFoto.find('.big-foto').not('.disappearance').addClass('disappearance');
+
+        bigBlockFoto
             .removeClass('new-block-js')
             .html($(this).html())
-            .addClass('new-block-js');
+            .addClass('new-block-js')
+            .append(getBigFoto);
+
+        $('.new-block-js .disappearance')
+            .animate({
+                'opacity':'0'
+            },600, function(){
+                bigBlockFoto.find('.disappearance').remove();
+            });
 
         $('.new-block-js .big-foto')
             .animate({
                 'opacity':'1'
             },600);
+
+
     });
 
     /*a smooth Scroll*/

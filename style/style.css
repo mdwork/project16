@@ -169,13 +169,15 @@ a:hover                        { text-decoration:none; }
     }
     .big-block-kind-activity .big-foto {
         width: 100%;
+        opacity: 1;
     }
     .new-block-js .big-foto {
-        opacity: 0;
+        opacity: 1;
     }
     .big-block-kind-activity .name-service {
         position: absolute;
         bottom: 95px;
+        z-index: 15;
         width: 100%;
         font-size: 36px;
         text-align: center;
@@ -211,6 +213,7 @@ a:hover                        { text-decoration:none; }
         position: absolute;
         bottom: 35px;
         left: 50%;
+        z-index: 15;
         margin-left: -78px;
     }
 .list-service {
@@ -592,4 +595,10 @@ a {
     display: block;
     font-size: 188px;
     line-height: 150px;
+}
+.disappearance {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    opacity: 0;
 }
