@@ -15,7 +15,7 @@ $(document).ready(function(){
         $('.new-block-js .big-foto')
             .animate({
                 'opacity':'1'
-            },300);
+            },600);
     });
 
     /*a smooth Scroll*/

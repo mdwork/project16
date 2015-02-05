@@ -301,15 +301,20 @@ a:hover                        { text-decoration:none; }
                 display: none;
             }
             .list-service .name-service {
-                display: block;
+                display: table;
                 position: absolute;
-                top: 50px;
+                top: 0;
                 width: 100%;
+                height: 100%;
                 text-align: center;
                 text-transform: uppercase;
                 color: #fff;
                 font-size: 14px;
             }
+                .list-service .name-service span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
                 .list-service .name-service span span {
                     display: block;
                     font-size: 30px;
