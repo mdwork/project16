@@ -122,7 +122,7 @@ $(document).ready(function(){
         else if (scrollHeight > windowHeight &&
             (body.offsetHeight <= windowHeight ||
             html.offsetHeight <= windowHeight)) {
-            root.style.height = "auto";
+            root.style.height = "100%";
             if (root.offsetHeight <= windowHeight) {
                 var underlay = document.createElement("div");
                 underlay.style.clear = "both";
