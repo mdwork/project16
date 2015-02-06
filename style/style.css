@@ -521,7 +521,11 @@ a:hover                        { text-decoration:none; }
         .sidebar a {
             text-decoration: none;
         }
+        .sidebar .current-menu-item span {
+            line-height: 19px;
+        }
             .sidebar .current-menu-item a,
+            .sidebar .current-menu-item span,
             .sidebar a:hover {
                 color: #353535;
             }
