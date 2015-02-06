@@ -2,6 +2,8 @@ $(document).ready(function(){
     /*animate home slider*/
     var itemServiceBlock = $('.list-service li');
 
+    itemServiceBlock.eq(0).addClass('active');
+
     itemServiceBlock.on('click', function(){
         var bigBlockFoto = $('.big-block-kind-activity');
 
@@ -22,16 +24,14 @@ $(document).ready(function(){
         $('.new-block-js .disappearance')
             .animate({
                 'opacity':'0'
-            },600, function(){
+            },400, function(){
                 bigBlockFoto.find('.disappearance').remove();
             });
 
         $('.new-block-js .big-foto')
             .animate({
                 'opacity':'1'
-            },600);
-
-
+            },500);
     });
 
     /*a smooth Scroll*/
