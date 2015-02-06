@@ -260,27 +260,39 @@ a:hover                        { text-decoration:none; }
         .list-service li:hover .overview {
             display: block;
         }
-        .service-1 .overview {
+        .service-1 .overview,
+        .service-7 .overview,
+        .list-service > li:nth-child(6n+1) .overview {
             background: #5E182F;
             opacity: 0.5;
         }
-        .service-2 .overview {
+        .service-2 .overview,
+        .service-8 .overview,
+        .list-service > li:nth-child(6n+2) .overview  {
             background: #0D3C50;
             opacity: 0.7;
         }
-        .service-3 .overview {
+        .service-3 .overview,
+        .service-9 .overview,
+        .list-service > li:nth-child(6n+3) .overview  {
             background: #16310F;
             opacity: 0.5;
         }
-        .service-4 .overview {
+        .service-4 .overview,
+        .service-10 .overview,
+        .list-service > li:nth-child(6n+4) .overview  {
             background: #000;
             opacity: 0.5;
         }
-        .service-5 .overview {
+        .service-5 .overview,
+        .service-11 .overview,
+        .list-service > li:nth-child(6n+5) .overview  {
             background: #115A8F;
             opacity: 0.5;
         }
-        .service-6 .overview {
+        .service-6 .overview,
+        .service-12 .overview,
+        .list-service > li:nth-child(6n) .overview  {
             background: #C08D1E;
             opacity: 0.5;
         }
