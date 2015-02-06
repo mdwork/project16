@@ -139,23 +139,37 @@ a:hover                        { text-decoration:none; }
             right: 60px;
             color: #fff;
         }
-            .toggle-language button {
-                padding: 0;
-                background: none;
-                border: none;
-                color: #fff;
-                font-size: 14px;
+            .toggle-language li {
+                float: left;
+                position: relative;
+                padding: 0 5px;
+            }
+                .toggle-language li:before {
+                    content: "|";
+                    position: absolute;
+                    left: -2px;
+                    color: #ffffff;
+                }
+                .toggle-language li:first-child:before {
+                    display: none;
+                }
+                .toggle-language a {
+                    color: #fff;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-decoration: none;
 
-                -webkit-transition: all .3s;
-                -moz-transition: all .3s;
-                -ms-transition: all .3s;
-                -o-transition: all .3s;
-                transition: all .3s;
-            }
-            .toggle-language .active,
-            .toggle-language button:hover {
-                color: #c7c7c7;
-            }
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -ms-transition: all .3s;
+                    -o-transition: all .3s;
+                    transition: all .3s;
+                }
+                .toggle-language .current-lang a,
+                .toggle-language .current-lang,
+                .toggle-language a:hover {
+                    color: #c7c7c7;
+                }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------CONTENT--------------------------------------*/
 /*----------------------------------------------------------------------------------*/
@@ -191,6 +205,9 @@ a:hover                        { text-decoration:none; }
             width: 480px;
             margin: 0 auto;
         }
+            .big-block-kind-activity .name-service span p span {
+                font-size: inherit !important;
+            }
     a.btn-white {
         padding: 10px 15px;
         font-size: 14px;
@@ -313,7 +330,6 @@ a:hover                        { text-decoration:none; }
                 width: 100%;
                 height: 100%;
                 text-align: center;
-                text-transform: uppercase;
                 color: #fff;
                 font-size: 14px;
             }
@@ -323,11 +339,6 @@ a:hover                        { text-decoration:none; }
                 }
                 .list-service .name-service span span {
                     display: block;
-                    font-size: 30px;
-                    text-transform: uppercase;
-                }
-                .service-4 .name-service span {
-                    text-transform: lowercase;
                 }
 .main-content {
     float: right;
@@ -384,7 +395,6 @@ a:hover                        { text-decoration:none; }
     .tbl-products,
     .tbl-partners {
         width: 100%;
-        margin-bottom: 50px;
     }
         .tbl-products thead th {
             padding: 10px;
@@ -392,6 +402,7 @@ a:hover                        { text-decoration:none; }
             font-weight: 400;
             border: 1px solid #E3E3E3;
             background: #F1F5F9;
+            text-align: center;
         }
         .tbl-products td {
             width: 50%;
@@ -406,7 +417,7 @@ a:hover                        { text-decoration:none; }
             width: 50%;
             padding: 10px 0;
         }
-        .tbl-partners td:nth-child(2n +1) {
+        .tbl-partners td:nth-child(2n+1) {
             width: 60%;
         }
         .tbl-partners td:nth-child(2n) {
@@ -422,7 +433,15 @@ a:hover                        { text-decoration:none; }
         .tbl-partners a:hover {
             text-decoration: none;
         }
-    .page-id-35 h2 {
+        .tablepress-table-name,
+        .tablepress-table-description {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 17.5px;
+            font-weight: 400;
+        }
+    .page-id-35 h2,
+    .page-id-197 h2 {
         margin-bottom: 20px;
         font-size: 18px;
         text-align: center;
